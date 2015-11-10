@@ -28,7 +28,8 @@ public class CalculatorTest {
 		assertNotEquals(23, calculator.divide(20,2));
 		assertEquals(2, calculator.subtract(5,3));
 		assertNotEquals(7, calculator.subtract(5,3));
-		assertNotEquals(true, calculator.isEqual(10,8));
+		assertEquals(false, calculator.isEqual(52,8));
+		assertEquals(true, calculator.isEqual(8,8));
 		
 	}
 	
